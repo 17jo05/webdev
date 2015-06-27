@@ -1,0 +1,80 @@
+/* headings */
+h1{font-style:normal;font-size:50;color:black;font-style: oblique;font-family:verdana;}
+h3{font-style:normal;font-size:14;color:#FFFFFF;text-align: center;font-family:verdana;}
+
+/* paragraph */
+p{font-family:verdana};
+<? if (
+ stristr($ua, "Windows CE") or
+ stristr($ua, "Mobile") ) {
+ $DEVICE_TYPE="MOBILE";
+ }
+ if (isset($DEVICE_TYPE) and $DEVICE_TYPE=="MOBILE") {
+ $location='index.html/index.php';
+ header ('Location: '.$location);
+ exit;
+ }
+ ?> 
+
+/*body */
+body{padding-top:20;font-size:40;font-style:normal;color:lightsalmon;font-family:cursive;}
+table 
+{width:96% ;text-align:center;font-size:18;padding-left:10;padding-right:20; }
+th{height:30px;}
+footer{text-align:center;padding-top:40; color:darkblue;;font-size:15}
+
+.nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li{
+  display: inline;
+  
+ }	
+ 
+ .dark{
+ 	background-color: #8AB8E6;}
+
+
+.jumbotron{
+ background-color:#FFFFFF
+}
+
+.jumbotron.hover{
+ background-color: #0066FF
+}
+
+#slideshow{
+	
+	height: 960px;
+	width:  720px;
+	margin-left: 22%
+	
+	}
+
+
+
+/*
+#slider{
+	width: 1700px;
+		height: 600px;
+	overflow:  hidden;
+}
+#slider.slides{
+	width: 600px;
+	height: 600px;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+#slider.slide{
+	float: left;	
+	width: 1700px;
+	height: 600px;
+	list-style-type:none; 
+}
+*/
